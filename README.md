@@ -8,7 +8,7 @@
 A sleek, responsive, and high-performance calculator built using **Vanilla JavaScript**. This project focuses on clean UI/UX and efficient logic handling for mathematical operations.
 
 **Live Demo 🚀**
-<a target=_blank href="https://calculator-hamzflst.netlify.app/">LIVE DEMO</a>
+<a target="_blank" href="https://calculator-hamzflst.netlify.app/">LIVE DEMO</a>
 
 ---
 
