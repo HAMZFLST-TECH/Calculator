@@ -1,68 +1,84 @@
-#calculator{
+#calculator {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(22, 22, 22);
     overflow: hidden;
+    width: 100%;
     max-width: 500px;
     border-radius: 20px;
+    margin: auto;
 }
-.dis{
+
+.dis {
     background-color: black;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#display{
+
+#display {
     width: 100%;
     padding: 20px;
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 8vw, 3rem);
     text-align: right;
     border: none;
     background-color: rgb(29, 53, 29);
+    box-sizing: border-box;
 }
-#keys{
+
+#keys {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     padding: 20px;
 }
-button{
-    width: 100px;
-    height: 100px;
+
+button {
+    width: 100%;
+    aspect-ratio: 1 / 1;
     border-radius: 10px;
     border: none;
     background-color: black;
     color: white;
-    font-size: 2rem;
+    font-size: clamp(1rem, 5vw, 2rem);
     font-weight: bold;
     cursor: pointer;
 }
-button:hover{
-    background-color:rgba(0, 0, 0, 0.459);
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.459);
 }
-.op{
+
+.op {
     background-color: blue;
 }
-.op:hover{
+
+.op:hover {
     background-color: rgba(0, 0, 255, 0.692);
 }
-.calc{
+
+.calc {
     background-color: green;
 }
-.calc:hover{
+
+.calc:hover {
     background-color: rgba(0, 128, 0, 0.575);
 }
-.reset{
+
+.reset {
     background-color: red;
 }
-.reset:hover{
+
+.reset:hover {
     background-color: rgba(255, 0, 0, 0.61);
 }
 
-body{
+body {
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 10px;
+    box-sizing: border-box;
 }
